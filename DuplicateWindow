@@ -1,0 +1,9 @@
+public static void main(String[] args) {
+		System.setProperty("org.apache.commons.logging.Log","org.apache.commons.logging.impl.Jdk14Logger");
+		System.setProperty("webdriver.chrome.driver","E:\\Workspace\\chromedriver.exe");
+		ChromeOptions options = new ChromeOptions();
+		options.addArguments("disable-infobars");
+		WebDriver driver;
+		driver = new ChromeDriver();
+		driver.get("http://app.google.com");
+		}
